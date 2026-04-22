@@ -1,6 +1,6 @@
 # 🏥 Hospital Appointment System - Frontend
 
-![Banner](./src/assets/readme image hero section.png)
+![Banner](./src/assets/readme_image_hero_section.png)
 
 ## ✨ Overview
 A modern, intuitive, and responsive web application designed to streamline the process of booking hospital appointments. Built with speed and user experience in mind, this platform connects patients with doctors effortlessly.
@@ -33,50 +33,3 @@ A modern, intuitive, and responsive web application designed to streamline the p
 - **Routing:** React Router DOM
 - **API Communication:** Axios
 
----
-
-## 🏁 Getting Started
-
-### Prerequisites
-- Node.js (v16.x or higher)
-- npm or yarn
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   ```
-
-2. **Navigate to the project directory**
-   ```bash
-   cd "Frontend Hospital Appointment System - Mexpertz"
-   ```
-
-3. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-4. **Set up Environment Variables**
-   Create a `.env` file in the root and add:
-   ```env
-   VITE_API_URL=http://localhost:5000/api
-   ```
-
-5. **Run the development server**
-   ```bash
-   npm run dev
-   ```
-
-## 🤝 Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-This project is licensed under the MIT License.
-
----
-
-<p align="center">
-  Developed with ❤️ by Mexpertz
-</p>
