@@ -86,8 +86,7 @@ const Dashboard = () => {
         ...bookingData,
         patientId: user.id || user._id,
         appointmentDate: bookingData.date,
-        timeSlot: bookingData.time,
-        department: 'General'
+        timeSlot: bookingData.time
       });
       setShowBooking(false);
       fetchAppointments();
