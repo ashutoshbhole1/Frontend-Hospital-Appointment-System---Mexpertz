@@ -1,0 +1,238 @@
+:root {
+  --hospital-blue: #0f172a;
+  --hospital-accent: #3b82f6;
+  --hospital-light: #f8fafc;
+  --hospital-glass: rgba(255, 255, 255, 0.8);
+}
+
+.home-container {
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  background: radial-gradient(circle at top right, #e0f2fe, #ffffff);
+  padding: 4rem 5%;
+}
+
+.hero-content {
+  flex: 1;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--hospital-accent);
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-size: 4rem;
+  line-height: 1.1;
+  color: var(--hospital-blue);
+  font-family: 'Outfit', sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title span {
+  color: var(--hospital-accent);
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  color: #64748b;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.hero-image-container {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 30px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.02);
+}
+
+/* Trust Elements */
+.trust-badges {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.trust-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.trust-number {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--hospital-blue);
+}
+
+.trust-label {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+/* Services Section */
+.services-section {
+  padding: 8rem 5%;
+  background: white;
+  text-align: center;
+}
+
+.section-tag {
+  color: var(--hospital-accent);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: var(--hospital-blue);
+  margin: 1rem 0 4rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  padding: 3rem 2rem;
+  border-radius: 24px;
+  background: #f8fafc;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  text-align: left;
+}
+
+.service-card:hover {
+  background: white;
+  border-color: #e2e8f0;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  color: var(--hospital-blue);
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* CTA Buttons */
+.btn-cta {
+  display: inline-block;
+  padding: 1.25rem 2.5rem;
+  background: var(--hospital-accent);
+  color: white;
+  border-radius: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.3);
+}
+
+.btn-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.4);
+  background: #2563eb;
+}
+
+/* About Section */
+.about-section {
+  padding: 8rem 5%;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  background: #f1f5f9;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-image {
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  color: var(--hospital-blue);
+  margin-bottom: 1.5rem;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  color: #475569;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 968px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 6rem;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .hero-image-container {
+    margin-top: 4rem;
+  }
+  
+  .trust-badges {
+    justify-content: center;
+  }
+  
+  .about-section {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
