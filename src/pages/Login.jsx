@@ -29,7 +29,7 @@ const Login = () => {
       <div className="auth-card">
         <h2>Welcome Back</h2>
         <p className="auth-subtitle">Log in to manage your appointments</p>
-        
+
         {error && <div className="error-message">{error}</div>}
 
         <form onSubmit={handleSubmit}>

@@ -11,23 +11,23 @@ const Dashboard = () => {
   const [error, setError] = useState('');
   const [activeTab, setActiveTab] = useState(user.role === 'admin' ? 'directory' : 'appointments');
   const [directory, setDirectory] = useState([]);
-  
+
   const [showBooking, setShowBooking] = useState(false);
   const [isRescheduling, setIsRescheduling] = useState(false);
   const [selectedAppt, setSelectedAppt] = useState(null);
-  
+
   const [bookingData, setBookingData] = useState({
     doctorId: '',
     date: '',
     time: '',
     reason: ''
   });
-  
+
   const [rescheduleData, setRescheduleData] = useState({
     date: '',
     time: ''
   });
-  
+
   const [doctors, setDoctors] = useState([]);
 
   useEffect(() => {
@@ -167,11 +167,11 @@ const Dashboard = () => {
             <div className="form-row">
               <div className="form-group">
                 <label>New Date</label>
-                <input type="date" value={rescheduleData.date} onChange={(e) => setRescheduleData({...rescheduleData, date: e.target.value})} required min={new Date().toISOString().split('T')[0]} />
+                <input type="date" value={rescheduleData.date} onChange={(e) => setRescheduleData({ ...rescheduleData, date: e.target.value })} required min={new Date().toISOString().split('T')[0]} />
               </div>
               <div className="form-group">
                 <label>New Time</label>
-                <input type="time" value={rescheduleData.time} onChange={(e) => setRescheduleData({...rescheduleData, time: e.target.value})} required />
+                <input type="time" value={rescheduleData.time} onChange={(e) => setRescheduleData({ ...rescheduleData, time: e.target.value })} required />
               </div>
             </div>
             <div className="form-actions">
@@ -251,7 +251,7 @@ const Dashboard = () => {
                     <p><strong>Time:</strong> {appt.timeSlot || appt.time}</p>
                     <p><strong>Reason:</strong> {appt.reason}</p>
                   </div>
-                  
+
                   <div className="appt-actions">
                     {user.role === 'doctor' && appt.status === 'pending' && (
                       <>
@@ -260,7 +260,7 @@ const Dashboard = () => {
                         <button className="btn-reschedule" onClick={() => handleRescheduleClick(appt)}>Reschedule</button>
                       </>
                     )}
-                    
+
                     {user.role === 'user' && appt.status !== 'cancelled' && appt.status !== 'rejected' && (
                       <button className="btn-cancel" onClick={() => handleCancel(appt._id)}>Cancel Appointment</button>
                     )}

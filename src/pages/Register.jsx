@@ -34,7 +34,7 @@ const Register = () => {
       <div className="auth-card register-card">
         <h2>Create an Account</h2>
         <p className="auth-subtitle">Join us to start booking appointments</p>
-        
+
         {error && <div className="error-message">{error}</div>}
 
         <form onSubmit={handleSubmit} className="register-form">

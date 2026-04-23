@@ -15,13 +15,13 @@ const Home = () => {
             Your Heart is in <span>Expert Hands.</span>
           </h1>
           <p className="hero-description">
-            Experience advanced cardiac treatments and compassionate care led by Dr. Ashutosh, 
+            Experience advanced cardiac treatments and compassionate care led by Dr. Ashutosh,
             a renowned Heart Surgeon dedicated to your long-term heart health.
           </p>
           <div className="hero-actions">
             <Link to="/register" className="btn-cta">Book Consultation</Link>
           </div>
-          
+
           <div className="trust-badges">
             <div className="trust-item">
               <span className="trust-number">15+</span>
@@ -37,7 +37,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="hero-image-container">
           <img src={doctorHero} alt="Dr. Ashutosh - Heart Surgeon" className="hero-image" />
         </div>
@@ -47,7 +47,7 @@ const Home = () => {
       <section className="services-section">
         <span className="section-tag">Specializations</span>
         <h2 className="section-title">Advanced Cardiac Services</h2>
-        
+
         <div className="services-grid">
           <div className="service-card">
             <span className="service-icon">🫀</span>
@@ -76,24 +76,24 @@ const Home = () => {
           <span className="section-tag">About the Doctor</span>
           <h2 className="about-title">Meet Dr. Ashutosh</h2>
           <p className="about-text">
-            Dr. Ashutosh is a triple board-certified Cardiovascular Surgeon with over 15 years of experience 
-            in treating complex heart conditions. Having performed over 5,000 successful surgeries, 
-            he combines technical excellence with a personalized approach to ensure the best possible 
+            Dr. Ashutosh is a triple board-certified Cardiovascular Surgeon with over 15 years of experience
+            in treating complex heart conditions. Having performed over 5,000 successful surgeries,
+            he combines technical excellence with a personalized approach to ensure the best possible
             outcomes for every patient.
           </p>
           <p className="about-text">
-            His clinic is equipped with the latest medical technology, providing a safe and comfortable 
+            His clinic is equipped with the latest medical technology, providing a safe and comfortable
             environment for diagnosis, treatment, and recovery.
           </p>
-          <Link to="/register" className="btn-cta" style={{background: '#0f172a'}}>Learn More About Care</Link>
+          <Link to="/register" className="btn-cta" style={{ background: '#0f172a' }}>Learn More About Care</Link>
         </div>
       </section>
 
       {/* Footer-like CTA */}
-      <section className="services-section" style={{background: '#3b82f6', color: 'white'}}>
-        <h2 className="section-title" style={{color: 'white', marginBottom: '2rem'}}>Ready to Prioritize Your Heart Health?</h2>
-        <p style={{fontSize: '1.2rem', marginBottom: '3rem', opacity: 0.9}}>Join thousands of patients who trust Dr. Ashutosh for their cardiac well-being.</p>
-        <Link to="/register" className="btn-cta" style={{background: 'white', color: '#3b82f6'}}>Create Your Patient Profile</Link>
+      <section className="services-section" style={{ background: '#3b82f6', color: 'white' }}>
+        <h2 className="section-title" style={{ color: 'white', marginBottom: '2rem' }}>Ready to Prioritize Your Heart Health?</h2>
+        <p style={{ fontSize: '1.2rem', marginBottom: '3rem', opacity: 0.9 }}>Join thousands of patients who trust Dr. Ashutosh for their cardiac well-being.</p>
+        <Link to="/register" className="btn-cta" style={{ background: 'white', color: '#3b82f6' }}>Create Your Patient Profile</Link>
       </section>
     </div>
   );
